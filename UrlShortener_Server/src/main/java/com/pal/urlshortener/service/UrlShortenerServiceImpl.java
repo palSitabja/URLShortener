@@ -69,7 +69,7 @@ public class UrlShortenerServiceImpl implements UrlShortenerService{
         timeStamp=val.split("[.]");
         val=String.join("",timeStamp);
         timeStamp=val.split("T");
-        val=String.join("",timeStamp).substring(2,17);
+        val=String.join("",timeStamp).substring(2,15);
 
         StringBuilder enccodedURL=base62converter(Long.valueOf(val));
         return enccodedURL;

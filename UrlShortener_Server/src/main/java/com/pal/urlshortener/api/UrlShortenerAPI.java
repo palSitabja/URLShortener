@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 
 @RequestMapping(value = "/")
 @RestController
+@CrossOrigin
 public class UrlShortenerAPI {
 
     @Autowired
