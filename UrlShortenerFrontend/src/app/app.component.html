@@ -1,0 +1,29 @@
+<mat-toolbar style="background-color: inherit;">
+  <span style="font-family: 'Pacifico', cursive; font-size: 40px;color: white;">Ti.ny</span>
+  <span style="flex: 1 1 auto;" class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <a style="text-decoration: none;color: black;" href="https://github.com/palSitabja/URLShortener" target="_blank"><mat-icon>info</mat-icon></a>
+    
+  </button>
+</mat-toolbar>
+<div class="container">
+  <mat-card class="">
+    <div class="row justify-content-center">
+      <h1 style="font-family: 'Pacifico', cursive; font-size: larger; font-size: 30px;color: white;">Exchange Your Large urls with smaller one</h1>
+    </div>
+    <div class="row justify-content-center">
+      <!-- <textarea style="width: 80%;background-color: #283241;color: white;" matInput placeholder="Long Url" rows="3" [(ngModel)]="longUrl"></textarea><br> -->
+      <input type="text" style="width: 80%;height: 9vh; background-color: #283241;color: white;" matInput placeholder="Enter any Url" [(ngModel)]="longUrl"><br>
+      
+    </div>
+    <div class="row justify-content-center">
+      <button style="background-color: #FBBE52;color: white;" mat-raised-button type="submit" (click)="submitLongUrl()">Submit</button>
+    </div>
+    <div *ngIf="shortUrl" class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 style="color: white;">Your Tiny URL is: </h2>
+        <a  style="text-decoration: none;color: whitesmoke;"  href="{{'https://ti-nyurl.herokuapp.com/'+shortUrl}}" target="_blank">https://ti-nyurl.herokuapp.com/{{shortUrl}}</a>
+      </div>
+    </div>
+  </mat-card>
+</div>

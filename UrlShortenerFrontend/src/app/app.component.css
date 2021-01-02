@@ -1,0 +1,20 @@
+.container{
+    margin-top: 10vh;
+
+}
+mat-card{
+    padding: 25px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+textarea::placeholder{
+    color: white;
+    /* margin: 20px 20px 20px 20px ; */
+}
+.row{
+    padding: 20px;
+}
