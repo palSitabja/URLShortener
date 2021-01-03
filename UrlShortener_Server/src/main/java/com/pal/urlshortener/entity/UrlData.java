@@ -1,7 +1,6 @@
 package com.pal.urlshortener.entity;
 
 import com.mongodb.lang.NonNull;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
