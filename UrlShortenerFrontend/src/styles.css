@@ -5,7 +5,13 @@ html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-image: url("assets/bg4.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("assets/bg4.jpg"); */
+    background: url("assets/bg4.jpg") no-repeat center center fixed;
+    /* background-repeat: no-repeat; */
     background-size: cover;
+}
+@media screen and (max-width: 450px){
+    body { 
+        background: url("assets/mobbg-2.jpg") no-repeat center center fixed;
+    }
 }
